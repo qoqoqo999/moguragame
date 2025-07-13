@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background: #f8f8f8;
+  margin: 0;
+  padding: 20px;
+}
+
+#game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.hole {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.mole {
+  width: 80px;
+  height: 80px;
+  background: brown;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  transition: top 0.2s ease;
+}
+
+.mole.show {
+  top: 10px;
+}
